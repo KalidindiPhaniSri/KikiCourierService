@@ -1,4 +1,4 @@
-using KikiCourierService.KikiCourierService.Infrastructure.Interfaces;
+using KikiCourierService.KikiCourierService.BLL.Interfaces;
 
 namespace KikiCourierService.KikiCourierService.Infrastructure.InputProviders
 {

@@ -1,4 +1,4 @@
-namespace KikiCourierService.KikiCourierService.Infrastructure.Interfaces
+namespace KikiCourierService.KikiCourierService.BLL.Interfaces
 {
     public interface IInputProvider
     {
