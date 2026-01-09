@@ -1,8 +1,8 @@
 using KikiCourierService.KikiCourierService.BLL.Interfaces;
 
-namespace KikiCourierService.KikiCourierService.Infrastructure.InputProviders
+namespace KikiCourierService.KikiCourierService.Infrastructure.PackageInputProviders
 {
-    public class ConsoleInputProvider : IInputProvider
+    public class ConsolePackageInputProvider : IPackageInputProvider
     {
         public string ReadLine()
         {

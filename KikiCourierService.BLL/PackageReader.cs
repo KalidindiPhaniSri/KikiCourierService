@@ -2,9 +2,9 @@ using KikiCourierService.KikiCourierService.BLL.Interfaces;
 
 namespace KikiCourierService.KikiCourierService.BLL
 {
-    public class PackageReader(IInputProvider input)
+    public class PackageReader(IPackageInputProvider input)
     {
-        private readonly IInputProvider _input = input;
+        private readonly IPackageInputProvider _input = input;
         private readonly List<Package> _packages =  [ ];
         public double BaseDeliveryPrice { get; private set; }
         public IReadOnlyList<Package> Packages => _packages;

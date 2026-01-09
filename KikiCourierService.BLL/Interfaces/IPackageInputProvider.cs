@@ -1,6 +1,6 @@
 namespace KikiCourierService.KikiCourierService.BLL.Interfaces
 {
-    public interface IInputProvider
+    public interface IPackageInputProvider
     {
         string ReadLine();
     }

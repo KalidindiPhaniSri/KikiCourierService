@@ -2,7 +2,7 @@ using KikiCourierService.KikiCourierService.BLL.Interfaces;
 
 namespace KikiCourierService.KikiCourierService.Infrastructure.InputProviders
 {
-    public class FileInputProvider(string filePath) : IInputProvider
+    public class FilePackageInputProvider(string filePath) : IPackageInputProvider
     {
         private StreamReader _reader = new(filePath);
 
