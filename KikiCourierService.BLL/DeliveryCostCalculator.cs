@@ -2,7 +2,7 @@ namespace KikiCourierService.KikiCourierService.BLL
 {
     public class DeliveryCostCalculator
     {
-        static double CalculateDeliveryCost(double basePrice, int weight, int distance)
+        public static double CalculateDeliveryCost(double basePrice, int weight, int distance)
         {
             if (basePrice < 0 || weight < 0 || distance < 0)
             {
