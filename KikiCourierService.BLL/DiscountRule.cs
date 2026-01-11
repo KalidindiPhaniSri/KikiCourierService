@@ -35,12 +35,21 @@ namespace KikiCourierService.KikiCourierService.BLL
             MaxDistance = maxDistance;
         }
 
-        public bool IsApplicable(int weight, int distance)
+        private bool IsApplicable(int weight, int distance)
         {
             return weight >= MinWeight
                 && weight <= MaxWeight
                 && distance >= MinDistance
                 && distance <= MaxDistance;
+        }
+
+        public double CalculateDiscountPercentage(int weight, int distance)
+        {
+            if (weight < 0 || distance < 0)
+            {
+                return 0;
+            }
+            return IsApplicable(weight, distance) ? Discount : 0;
         }
     }
 }
