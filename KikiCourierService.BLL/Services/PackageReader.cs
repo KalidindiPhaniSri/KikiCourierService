@@ -1,6 +1,7 @@
 using KikiCourierService.KikiCourierService.BLL.Interfaces;
+using KikiCourierService.KikiCourierService.BLL.Models;
 
-namespace KikiCourierService.KikiCourierService.BLL
+namespace KikiCourierService.KikiCourierService.BLL.Services
 {
     public class PackageReader(IPackageInputProvider input)
     {

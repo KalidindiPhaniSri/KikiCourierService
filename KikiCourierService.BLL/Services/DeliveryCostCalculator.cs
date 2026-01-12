@@ -1,4 +1,4 @@
-namespace KikiCourierService.KikiCourierService.BLL
+namespace KikiCourierService.KikiCourierService.BLL.Services
 {
     public class DeliveryCostCalculator
     {

@@ -1,4 +1,4 @@
-namespace KikiCourierService.KikiCourierService.BLL
+namespace KikiCourierService.KikiCourierService.BLL.Models
 {
     public class DiscountRule
     {
