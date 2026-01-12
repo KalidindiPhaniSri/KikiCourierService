@@ -1,6 +1,6 @@
 using KikiCourierService.KikiCourierService.BLL.Interfaces;
 
-namespace KikiCourierService.KikiCourierService.Infrastructure.InputProviders
+namespace KikiCourierService.KikiCourierService.Infrastructure.InputProviders.InputProviders
 {
     public class FilePackageInputProvider(string filePath) : IPackageInputProvider
     {
