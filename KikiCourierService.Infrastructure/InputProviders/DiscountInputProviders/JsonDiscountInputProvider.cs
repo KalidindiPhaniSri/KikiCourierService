@@ -1,8 +1,8 @@
 using System.Text.Json;
-using KikiCourierService.KikiCourierService.BLL;
 using KikiCourierService.KikiCourierService.BLL.Interfaces;
+using KikiCourierService.KikiCourierService.BLL.Models;
 
-namespace KikiCourierService.KikiCourierService.Infrastructure.DiscountInputProviders
+namespace KikiCourierService.KikiCourierService.Infrastructure.InputProviders.DiscountInputProviders
 {
     public class JsonDiscountInputProvider : IDiscountRules
     {

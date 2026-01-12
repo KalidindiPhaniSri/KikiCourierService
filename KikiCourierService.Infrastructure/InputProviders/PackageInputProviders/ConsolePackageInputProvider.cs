@@ -1,6 +1,6 @@
 using KikiCourierService.KikiCourierService.BLL.Interfaces;
 
-namespace KikiCourierService.KikiCourierService.Infrastructure.PackageInputProviders
+namespace KikiCourierService.KikiCourierService.Infrastructure.InputProviders.PackageInputProviders
 {
     public class ConsolePackageInputProvider : IPackageInputProvider
     {
