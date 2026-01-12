@@ -1,19 +1,33 @@
 using KikiCourierService.KikiCourierService.BLL.Interfaces;
 using KikiCourierService.KikiCourierService.BLL.Models;
+using Microsoft.Extensions.Logging;
 
 namespace KikiCourierService.KikiCourierService.BLL.Services
 {
-    public class PackageReader(IPackageInputProvider input)
+    public class PackageReader
     {
-        private readonly IPackageInputProvider _input = input;
+        private readonly IPackageInputProvider _input;
         private readonly List<Package> _packages =  [ ];
+        private readonly ILogger<PackageReader> _logger;
         public double BaseDeliveryPrice { get; private set; }
         public IReadOnlyList<Package> Packages => _packages;
 
+        public PackageReader(IPackageInputProvider input, ILogger<PackageReader> logger)
+        {
+            _input = input;
+            _logger = logger;
+        }
+
         public void ReadInput()
         {
+            _logger.LogInformation("Started to read the input");
             ReadBaseDeliveryPrice();
             ReadPackages();
+            _logger.LogInformation(
+                "Finished reading input. BaseDeliveryPrice={BaseDeliveryPrice} PackagesCount={PackagesCount}",
+                BaseDeliveryPrice,
+                _packages.Count
+            );
         }
 
         public int GetPackagesCount()
@@ -23,8 +37,11 @@ namespace KikiCourierService.KikiCourierService.BLL.Services
 
         private double ReadDouble(string fieldName)
         {
+            _logger.LogInformation("Reading {fieldName}", fieldName);
             if (!double.TryParse(_input.ReadLine(), out double value))
             {
+                _logger.LogError("Invalid value for {FieldName}. Input={Input}", fieldName, value);
+
                 throw new InvalidDataException($"{fieldName} must be a number");
             }
             return value;
@@ -32,8 +49,11 @@ namespace KikiCourierService.KikiCourierService.BLL.Services
 
         private int ReadInt(string fieldName)
         {
+            _logger.LogInformation("Reading {fieldName}", fieldName);
             if (!int.TryParse(_input.ReadLine(), out int value))
             {
+                _logger.LogError("Invalid value for {FieldName}. Input={Input}", fieldName, value);
+
                 throw new InvalidDataException($"{fieldName} must be a number");
             }
             return value;
@@ -47,11 +67,13 @@ namespace KikiCourierService.KikiCourierService.BLL.Services
         public void AddSinglePackage(string id, int weight, int distance, string couponCode)
         {
             _packages.Add(new Package(id, weight, distance, couponCode));
+            _logger.LogInformation("Package {id} added", id);
         }
 
         private void ReadPackages()
         {
             int count = ReadInt("Packages count");
+            _logger.LogInformation("Read packages");
             for (int i = 0; i < count; i++)
             {
                 string id = _input.ReadLine();
