@@ -1,4 +1,5 @@
 using KikiCourierService.KikiCourierService.BLL.Interfaces;
+<<<<<<< HEAD
 using Microsoft.Extensions.Logging;
 
 namespace KikiCourierService.KikiCourierService.Infrastructure.InputProviders.InputProviders
@@ -29,13 +30,24 @@ namespace KikiCourierService.KikiCourierService.Infrastructure.InputProviders.In
                 throw;
             }
         }
+=======
+
+namespace KikiCourierService.KikiCourierService.Infrastructure.InputProviders.PackageInputProviders
+{
+    public class FilePackageInputProvider(string filePath) : IPackageInputProvider
+    {
+        private StreamReader _reader = new(filePath);
+>>>>>>> courier-service
 
         public string ReadLine()
         {
             string? value = _reader.ReadLine();
             if (value == null)
             {
+<<<<<<< HEAD
                 _logger.LogError("Rached to the end of the file");
+=======
+>>>>>>> courier-service
                 return _reader.ReadLine() ?? throw new EndOfStreamException("End of file reached");
             }
             else if (value == "-")
@@ -44,11 +56,14 @@ namespace KikiCourierService.KikiCourierService.Infrastructure.InputProviders.In
             }
             return value;
         }
+<<<<<<< HEAD
 
         public void Dispose()
         {
             _logger.LogDebug("Closing package input file");
             _reader.Dispose();
         }
+=======
+>>>>>>> courier-service
     }
 }

@@ -1,0 +1,40 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KikiCourierService.BLL", "KikiCourierService.BLL\KikiCourierService.BLL.csproj", "{06B785D3-F1D6-4C17-B440-2C3697A879EE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KikiCourierService.Infrastructure", "KikiCourierService.Infrastructure\KikiCourierService.Infrastructure.csproj", "{F0C938F2-4CF3-48B0-BCAA-BCE0375C34F7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KikiCourierService.Tests", "KikiCourierService.Tests\KikiCourierService.Tests.csproj", "{5C62E2BD-8A91-464C-BEFF-93D402234E86}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KikiCourierService", "KikiCourierService.csproj", "{B8A743B7-0F7A-48B9-AB49-A609B27359A9}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{06B785D3-F1D6-4C17-B440-2C3697A879EE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{06B785D3-F1D6-4C17-B440-2C3697A879EE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{06B785D3-F1D6-4C17-B440-2C3697A879EE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{06B785D3-F1D6-4C17-B440-2C3697A879EE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F0C938F2-4CF3-48B0-BCAA-BCE0375C34F7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F0C938F2-4CF3-48B0-BCAA-BCE0375C34F7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F0C938F2-4CF3-48B0-BCAA-BCE0375C34F7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F0C938F2-4CF3-48B0-BCAA-BCE0375C34F7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C62E2BD-8A91-464C-BEFF-93D402234E86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C62E2BD-8A91-464C-BEFF-93D402234E86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C62E2BD-8A91-464C-BEFF-93D402234E86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C62E2BD-8A91-464C-BEFF-93D402234E86}.Release|Any CPU.Build.0 = Release|Any CPU
+		{B8A743B7-0F7A-48B9-AB49-A609B27359A9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B8A743B7-0F7A-48B9-AB49-A609B27359A9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B8A743B7-0F7A-48B9-AB49-A609B27359A9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B8A743B7-0F7A-48B9-AB49-A609B27359A9}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

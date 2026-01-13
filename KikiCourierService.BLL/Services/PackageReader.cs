@@ -1,6 +1,9 @@
 using KikiCourierService.KikiCourierService.BLL.Interfaces;
 using KikiCourierService.KikiCourierService.BLL.Models;
+<<<<<<< HEAD
 using Microsoft.Extensions.Logging;
+=======
+>>>>>>> courier-service
 
 namespace KikiCourierService.KikiCourierService.BLL.Services
 {
