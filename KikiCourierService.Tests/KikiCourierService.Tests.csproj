@@ -20,4 +20,9 @@
     <Using Include="Xunit" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\KikiCourierService.Infrastructure\KikiCourierService.Infrastructure.csproj" />
+    <ProjectReference Include="..\KikiCourierService.BLL\KikiCourierService.BLL.csproj" />
+  </ItemGroup>
+
 </Project>
