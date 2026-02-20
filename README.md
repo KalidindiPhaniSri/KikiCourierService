@@ -1,2 +1,2 @@
 # KikiCourierService
-A console-based ASP.NET Core application that estimates delivery cost and delivery time for Kiki’s courier service.
+A console-based Dotnet Core application that estimates delivery cost and delivery time for Kiki’s courier service.
